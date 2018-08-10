@@ -1,0 +1,124 @@
+# HySDS config
+TYPE: hysds
+
+# mozart
+MOZART_PVT_IP: 
+MOZART_PUB_IP: 
+MOZART_FQDN: 
+
+# mozart rabbitmq
+MOZART_RABBIT_PVT_IP: 
+MOZART_RABBIT_PUB_IP: 
+MOZART_RABBIT_FQDN: 
+MOZART_RABBIT_USER:
+MOZART_RABBIT_PASSWORD: 
+
+# mozart redis
+MOZART_REDIS_PVT_IP: 
+MOZART_REDIS_PUB_IP: 
+MOZART_REDIS_FQDN: 
+
+# mozart ES
+MOZART_ES_PVT_IP: 
+MOZART_ES_PUB_IP: 
+MOZART_ES_FQDN: 
+
+OPS_USER: ops
+OPS_HOME: /home/ops
+OPS_PASSWORD_HASH: __password__
+LDAP_GROUPS: 
+KEY_FILENAME: 
+JENKINS_USER:
+JENKINS_DIR: 
+
+# metrics
+METRICS_PVT_IP: 
+METRICS_PUB_IP: 
+METRICS_FQDN: 
+
+# metrics redis
+METRICS_REDIS_PVT_IP: 
+METRICS_REDIS_PUB_IP: 
+METRICS_REDIS_FQDN: 
+
+# metrics ES
+METRICS_ES_PVT_IP: 
+METRICS_ES_PUB_IP: 
+METRICS_ES_FQDN: 
+
+# grq
+GRQ_PVT_IP: 
+GRQ_PUB_IP: 
+GRQ_FQDN:
+GRQ_PORT:
+
+# grq ES
+GRQ_ES_PVT_IP: 
+GRQ_ES_PUB_IP: 
+GRQ_ES_FQDN: 
+
+# factotum
+FACTOTUM_PVT_IP: 
+FACTOTUM_PUB_IP: 
+FACTOTUM_FQDN: 
+
+# continuous integration server
+CI_PVT_IP: 
+CI_PUB_IP: 
+CI_FQDN: 
+JENKINS_API_USER:
+JENKINS_API_KEY:
+
+# verdi build
+VERDI_PVT_IP: 
+VERDI_PUB_IP: 
+VERDI_FQDN: 
+
+# WebDAV product server
+DAV_SERVER: aria-dav.jpl.nasa.gov
+DAV_USER: __dav_user__
+DAV_PASSWORD: __dav_password__
+
+# GCP settings for product bucket
+DATASET_GCP_ACCESS_KEY: 
+DATASET_GCP_SECRET_KEY: 
+DATASET_GCP_REGION: us-west2
+DATASET_GS_ENDPOINT: storage.googleapis.com
+DATASET_GS_WEBSITE_ENDPOINT: storage.googleapis.com
+DATASET_BUCKET: __dataset_bucket__
+
+# GCP settings for autoscale workers
+GCP_REGION: us-west2
+GS_ENDPOINT: storage.googleapis.com
+CODE_BUCKET: __code_bucket__
+VERDI_PRIMER_IMAGE: gs://storage.googleapis.com/apt-code/hysds-verdi-latest.tar.gz
+VERDI_TAG: lateset 
+VERDI_UID: 1000
+VERDI_GID: 1001
+QUEUES: dumby-job_worker-small dumby-job_worker-large
+INSTANCE_TYPES: t2.micro t2.micro
+VENUE: ops
+
+# scihub and vertex accounts
+SCIHUB_USER: __user__
+SCIHUB_PASSWORD: __password__
+URS_USER: __user__
+URS_PASSWORD: __password__
+
+# git oauth token
+GIT_OAUTH_TOKEN: 
+
+# DO NOT EDIT ANYTHING BELOW THIS
+
+# user_rules_dataset
+PROVES_URL: https://prov-es.jpl.nasa.gov/beta
+PROVES_IMPORT_URL: https://prov-es.jpl.nasa.gov/beta/api/v0.1/prov_es/import/json
+DATASETS_CFG: /home/ops/verdi/etc/datasets.json
+
+# system jobs queue
+SYSTEM_JOBS_QUEUE: system-jobs-queue
+
+MOZART_ES_CLUSTER: resource_cluster
+METRICS_ES_CLUSTER: metrics_cluster
+DATASET_QUERY_INDEX: grq
+USER_RULES_DATASET_INDEX: user_rules
